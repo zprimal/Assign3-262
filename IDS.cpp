@@ -1,4 +1,6 @@
-// g++ -std=c++11 IDS.cpp -o IDS.exe
+// g++ -std=c++11 IDS.cpp Stat.cpp Event.cpp -o IDS.exe
+
+#include "IDS.h"
 
 int main(int argc, char const *argv[]) {
    if (argc != 4) {
@@ -10,31 +12,60 @@ int main(int argc, char const *argv[]) {
    string statsFile = argv[2];
    string sDays = argv[3];
    int Days = stoi(sDays);
+
+   readEvent(eventFile);
+   cout << "===========================================================" << endl;
+   readStats(statsFile);
    return 0;
 }
 
 void readEvent(string fileName){
    ifstream file;
+   string line;
 	file.open(fileName);
-
+   int size = 0;
    if(file.fail()){
 		cout << "Error reading file!" << endl;
 	} else {
-      cout << "Reading file..." << endl;
+      cout << "Reading events file..." << endl;
+      getline(file,line);
+      size = stoi(line);
+      cout << "Size = " << size << endl;
       while (getline(file,line)) {
          stringstream linestream(line);
-         string eName, eCD, sMin, sMax, sWgt;
-         int eMin, eMax, eWgt;
+         string eName, stCD, stMin, stMax, stWgt;
+         bool eCD;
+         double eMin = 0, eMax = 0, eWgt = 0;
 
          //Get variables in line
          getline(linestream, eName, ':');
-         getline(linestream, eCD, ':');
-         getline(linestream, sMin, ':');
-         getline(linestream, sMax, ':');
-         getline(linestream, sWgt, ':');
+         getline(linestream, stCD, ':');
+         getline(linestream, stMin, ':');
+         getline(linestream, stMax, ':');
+         getline(linestream, stWgt, ':');
 
          //Variables into glob variables
-         
+         if (stCD == "C") {
+            eCD = true;
+         } else {
+            eCD = false;
+         }
+
+         if (!stMin.empty()) {
+            eMin = stod(stMin, NULL);
+         }
+
+         if (!stMax.empty()) {
+            eMax = stod(stMax, NULL);
+         }
+
+         if (!stWgt.empty()) {
+            eWgt = stod(stWgt, NULL);
+         }
+
+         cout << eName << " " << eCD << " " << eMin << " " << eMax << " " << eWgt << endl;
+         Event newEvent(eName, eCD, eMin, eMax, eWgt);
+         globEvent.push_back(newEvent);
       }
    }
    cout << "Closing file" << endl;
@@ -43,20 +74,34 @@ void readEvent(string fileName){
 
 void readStats(string fileName){
    ifstream file;
+   string line;
 	file.open(fileName);
+   int size = 0;
 
    if(file.fail()){
 		cout << "Error reading file!" << endl;
 	} else {
-      cout << "Reading file..." << endl;
-      while (!file.eof()) {
-         //Keep reading
-         getline(file,line);
-         string tmp = "";
+      cout << "Reading stats file..." << endl;
+      getline(file,line);
+      size = stoi(line);
+      cout << "Size = " << size << endl;
+      while (getline(file,line)) {
+         stringstream linestream(line);
+         string sName, stMean, stSD;
+         double sMean, sSD;
 
-         //Trimming the line
-         line = line.substr(0, line.find("\r", 0));
-         line = line.substr(0, line.find("\n", 0));
+         //Get variables in line
+         getline(linestream, sName, ':');
+         getline(linestream, stMean, ':');
+         getline(linestream, stSD, ':');
+
+
+         //Variables into glob variables
+         sMean = stod(stMean);
+         sSD = stod(stSD);
+         cout << sName << " " << sMean << " " << sSD << endl;
+         Stat newStat(sName, sMean, sSD);
+         globStat.push_back(newStat);
       }
    }
    cout << "Closing file" << endl;
