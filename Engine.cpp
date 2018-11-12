@@ -1,37 +1,37 @@
 #include "Engine.h"
 
-Engine(){
+Engine::Engine(){
 
 }
 
-~Engine(){
+Engine::~Engine(){
    // Deconstructor
 }
 
-void push_event(Event newEvent){
-   this->gEvents.insert(newEvent.Name, newEvent);
+void Engine::push_event(Event newEvent){
+   this->gEvents.insert(std::make_pair<>(newEvent.Name, newEvent));
 }
 
-void push_stat(Stat newStat){
-   this->gStats.insert(newStat.Name, newStat);
+void Engine::push_stat(Stat newStat){
+   this->gStats.insert(std::make_pair<>(newStat.Name, newStat));
 }
 
-void startEngine(int Day){
-
-}
-
-void genInstances(){
+void Engine::startEngine(int Day){
 
 }
 
-void clearInstances(){
+void Engine::genInstances(){
 
 }
 
-void clearEvents(){
+void Engine::clearInstances(){
+
+}
+
+void Engine::clearEvents(){
    this->gEvents.clear();
 }
 
-void clearStats(){
+void Engine::clearStats(){
    this->gStats.clear();
 }

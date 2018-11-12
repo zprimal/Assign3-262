@@ -101,7 +101,7 @@ void readStats(string fileName){
          sSD = stod(stSD);
          cout << sName << " " << sMean << " " << sSD << endl;
          Stat newStat(sName, sMean, sSD);
-         gEnginet.push_stat(newStat);
+         gEngine.push_stat(newStat);
       }
    }
    cout << "Closing file" << endl;

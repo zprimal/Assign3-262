@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <cmath>
-#include <Map>
+#include <map>
 #include "Stat.h"
 #include "Event.h"
 
@@ -14,8 +14,8 @@ using namespace std;
 
 class Engine{
 private:
-   Map<string, Event> gEvents;
-   Map<string, Stats> gStats;
+   map<string, Event> gEvents;
+   map<string, Stat> gStats;
 
 public:
    Engine();
