@@ -10,6 +10,7 @@
 #include <vector>
 #include "Stat.h"
 #include "Event.h"
+#include "Engine.h"
 
 using namespace std;
 
@@ -18,7 +19,6 @@ void readStats(string);
 void displayEvent();
 void displayStats();
 
-vector<Stat> globStat;
-vector<Event> globEvent;
+Engine gEngine;
 
 #endif
