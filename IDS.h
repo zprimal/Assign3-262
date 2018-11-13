@@ -20,5 +20,6 @@ void displayEvent();
 void displayStats();
 
 Engine gEngine;
+int gDays
 
 #endif
