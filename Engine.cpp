@@ -35,3 +35,19 @@ void Engine::clearEvents(){
 void Engine::clearStats(){
    this->gStats.clear();
 }
+
+int Engine::checkEventStats(){
+   // Names different
+   for (auto i = gEvents.begin(); i != gEvents.end(); i++) {
+      for (auto j = gStats.begin(); j != gStats.end(); j++) {
+         /* code */
+      }
+   }
+
+   // Number of events must be the same
+
+
+   // Mean exceeds min-max
+
+
+}

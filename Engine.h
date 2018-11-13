@@ -27,6 +27,7 @@ public:
    void clearInstances();
    void clearEvents();
    void clearStats();
+   int checkEventStats();
 
 };
 
