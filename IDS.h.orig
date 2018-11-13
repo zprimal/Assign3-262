@@ -20,6 +20,10 @@ void displayEvent();
 void displayStats();
 
 Engine gEngine;
+<<<<<<< HEAD
+int gDays
+=======
 int gDays;
+>>>>>>> deepak
 
 #endif

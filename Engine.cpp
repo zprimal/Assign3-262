@@ -1,5 +1,4 @@
 #include "Engine.h"
-
 Engine::Engine(){
 
 }
@@ -20,8 +19,27 @@ void Engine::startEngine(int Day){
 
 }
 
-void Engine::genInstances(){
+void Engine::genInstances(int days){
+    random_device rd;
+    mt19937 gen(rd());
+        for(auto const& value: this->gStats) {
+            
+            std::cout << "########################## " <<value.second.Name <<  std::endl;
 
+            for(int i=0; i< days; i++){
+                std::normal_distribution<> d(value.second.Mean, value.second.stdDev);
+                int n = round(d(gen));
+
+                event_data newevent;
+                newevent.value = n;
+                eventdata.insert(make_pair<>(value.second.Name, newevent));
+                cout << n << endl;
+                // for (int i =0 ; i < n ; i++){
+                //     std::normal_distribution<> e(value.second.Mean, value.second.stdDev);
+                //     std::cout << round(d(gen)) << std::endl;
+                // }
+            }
+    }
 }
 
 void Engine::clearInstances(){
