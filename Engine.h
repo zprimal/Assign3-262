@@ -33,7 +33,7 @@ public:
    void push_event(Event);
    void push_stat(Stat);
    void startEngine(int);
-   void genInstances();
+   void genInstances(int);
    void clearInstances();
    void clearEvents();
    void clearStats();

@@ -1,6 +1,7 @@
 // g++ -std=c++11 IDS.cpp Stat.cpp Event.cpp -o IDS.exe
 
 #include "IDS.h"
+using namespace std;
 
 int main(int argc, char const *argv[]) {
    if (argc != 4) {
@@ -17,7 +18,7 @@ int main(int argc, char const *argv[]) {
    cout << "===========================================================" << endl;
    readStats(statsFile);
 
-      gEngine.genInstances();
+      gEngine.genInstances(gDays);
 
 
    return 0;
