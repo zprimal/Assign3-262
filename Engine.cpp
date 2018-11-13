@@ -15,41 +15,76 @@ void Engine::push_stat(Stat newStat){
    this->gStats.insert(std::make_pair<>(newStat.Name, newStat));
 }
 
+void Engine::push_stat_live(Stat newStat){
+   this->liveStat.insert(std::make_pair<>(newStat.Name, newStat));
+}
+
 void Engine::startEngine(int Day){
 
 }
 
-void Engine::genInstances(int days){
+void Engine::gen_sample(int days){
     random_device rd;
     mt19937 gen(rd());
     for(auto const& it: this->gStats) {
         
-        std::cout << "########################## " <<it.second.Name <<  std::endl;
-
         for(int i=0; i< days; i++){
-            std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
-            int n = (d(gen));
+			std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
+			int n = (d(gen));
 
-            event_data newevent;
-            newevent.value = n;
-            eventdata.insert(make_pair<>(it.second.Name, newevent));
-            cout << n << endl;
-            // for (int i =0 ; i < n ; i++){
-            //     std::normal_distribution<> e(value.second.Mean, value.second.stdDev);
-            //     std::cout << round(d(gen)) << std::endl;
-            // }
+			event_data newevent;
+			newevent.value = n;
+			eventdata.insert(make_pair<>(it.second.Name, newevent));
         }
     }
+
+	// for(auto const& it: this->eventdata) {
+	// 	std::cout << it.first << " "<<  it.second.value << std::endl;
+	// }
+
 }
 
-void Engine::clearInstances(){
+void Engine::gen_sample_live(int days){
+    random_device rd;
+    mt19937 gen(rd());
+    for(auto const& it: this->liveStat) {
+        
+        for(int i=0; i< days; i++){
+			std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
+			int n = (d(gen));
+
+			event_data newevent;
+			newevent.value = n;
+			eventdata.insert(make_pair<>(it.second.Name, newevent));
+        }
+    }
+
+	// for(auto const& it: this->eventdata) {
+	// 	std::cout << it.first << " "<<  it.second.value << std::endl;
+	// }
 
 }
 
-void Engine::clearEvents(){
-   this->gEvents.clear();
+
+
+int Engine::checkEventStats(){
+   // Names different
+   for (auto i = gEvents.begin(); i != gEvents.end(); i++) {
+      for (auto j = gStats.begin(); j != gStats.end(); j++) {
+         /* code */
+      }
+   }
+
+   // Number of events must be the same
+
+
+   // Mean exceeds min-max
+
+
 }
 
-void Engine::clearStats(){
-   this->gStats.clear();
+void Engine::clear_sample_data(){
+    //  Log this data first
+
+    this->eventdata.clear();
 }

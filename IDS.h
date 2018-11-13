@@ -14,8 +14,9 @@
 
 using namespace std;
 
-void readEvent(string);
-void readStats(string);
+int readEvent(string);
+int readStats(string);
+int readLive(string);
 void displayEvent();
 void displayStats();
 

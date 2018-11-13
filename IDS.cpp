@@ -4,32 +4,81 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-   if (argc != 4) {
+      if (argc != 4) {
       cout << argv[0] << " EventFile.txt StatsFile.txt Days" << endl;
       return -1;
-   }
+      }
 
-   string eventFile = argv[1];
-   string statsFile = argv[2];
-   string sDays = argv[3];
-   gDays = stoi(sDays);
+      string eventFile = argv[1];
+      string statsFile = argv[2];
+      string sDays = argv[3];
+      string line;
+      int eventSize, statSize, liveSize, liveDays;
+      gDays = stoi(sDays);
+      if (gDays < 25) {
+      cout << "/// Warning: Low sample size ///" << endl;
+      }
 
-   readEvent(eventFile);
-   cout << "===========================================================" << endl;
-   readStats(statsFile);
+      eventSize = readEvent(eventFile);
+      cout << endl;
+      statSize = readStats(statsFile);
+      if (eventSize != statSize) {
+      cout << "eventSize != statSize" << endl;
+      }
 
-      gEngine.genInstances(gDays);
+// #############################################
+
+      /* Do the base statistics generation */
+      gEngine.gen_sample(gDays);
+      gEngine.clear_sample_data();
+
+      /* Loop for next phase */
+      bool quit = false;
+      int option;
+      while(!quit){
+
+            cout << "\n\n1) Analyize new data" << endl;
+            cout << "2) Quit program" << endl;
+
+            std::cout << "\nEnter option: ";
+            std::cin >> option;
+            cin.clear();
+            cin.ignore();
+            switch(option){
+                  case 1: 
+                        /* Read and create live samples */
+                        cout << "Enter Live Stat file: ";
+                        getline(cin,line);
+                        liveSize = readLive(line);
+                        cout << "Enter Live Stat days: ";
+                        getline(cin,line);
+                        liveDays = stoi(line);
+                        gEngine.gen_sample_live(liveDays);
+
+                        /* Do Alert analysis */
+                        
+
+                        /* Clear Live Instances */      
+                        break;
+                  case 2: quit = true;
+                        break;
+                  default: std::cout << "Wrong choice!" <<std::endl;
+                        break;
+            }
+      }
 
 
+
+   
    return 0;
 }
 
-void readEvent(string fileName){
+int readEvent(string fileName){
    ifstream file;
    string line;
 	file.open(fileName);
    int size = 0;
-   int counter = 0;
+
    if(file.fail()){
 		cout << "Error reading file!" << endl;
 	} else {
@@ -37,8 +86,7 @@ void readEvent(string fileName){
       getline(file,line);
       size = stoi(line);
       cout << "Size = " << size << endl;
-      while (counter < size) {
-         getline(file,line);
+      while (getline(file,line)) {
          stringstream linestream(line);
          string eName, stCD, stMin, stMax, stWgt;
          bool eCD;
@@ -73,19 +121,18 @@ void readEvent(string fileName){
          cout << eName << " " << eCD << " " << eMin << " " << eMax << " " << eWgt << endl;
          //Event newEvent(eName, eCD, eMin, eMax, eWgt);
          gEngine.push_event(Event(eName, eCD, eMin, eMax, eWgt));
-         counter++;
       }
    }
    cout << "Closing file" << endl;
    file.close();
+   return size;
 }
 
-void readStats(string fileName){
+int readStats(string fileName){
    ifstream file;
    string line;
 	file.open(fileName);
    int size = 0;
-   int counter = 0;
 
    if(file.fail()){
 		cout << "Error reading file!" << endl;
@@ -94,8 +141,7 @@ void readStats(string fileName){
       getline(file,line);
       size = stoi(line);
       cout << "Size = " << size << endl;
-      while (counter < size) {
-         getline(file,line);
+      while (getline(file,line)) {
          stringstream linestream(line);
          string sName, stMean, stSD;
          double sMean, sSD;
@@ -111,11 +157,11 @@ void readStats(string fileName){
          cout << sName << " " << sMean << " " << sSD << endl;
          //Stat newStat(sName, sMean, sSD);
          gEngine.push_stat(Stat(sName, sMean, sSD));
-         counter++;
       }
    }
    cout << "Closing file" << endl;
    file.close();
+   return size;
 }
 
 void displayEvent(){
@@ -124,4 +170,40 @@ void displayEvent(){
 
 void displayStats(){
 
+}
+
+int readLive(string fileName){
+   ifstream file;
+   string line;
+	file.open(fileName);
+   int size = 0;
+
+   if(file.fail()){
+		cout << "Error reading file!" << endl;
+	} else {
+      cout << "Reading livestat file..." << endl;
+      getline(file,line);
+      size = stoi(line);
+      cout << "Size = " << size << endl;
+      while (getline(file,line)) {
+         stringstream linestream(line);
+         string sName, stMean, stSD;
+         double sMean, sSD;
+
+         //Get variables in line
+         getline(linestream, sName, ':');
+         getline(linestream, stMean, ':');
+         getline(linestream, stSD, ':');
+
+         //Variables into glob variables
+         sMean = stod(stMean);
+         sSD = stod(stSD);
+         cout << sName << " " << sMean << " " << sSD << endl;
+         //Stat newStat(sName, sMean, sSD);
+         gEngine.push_stat_live(Stat(sName, sMean, sSD));
+      }
+   }
+   cout << "Closing file" << endl;
+   file.close();
+   return size;
 }
