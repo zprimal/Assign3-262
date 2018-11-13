@@ -11,7 +11,7 @@ int main(int argc, char const *argv[]) {
    string eventFile = argv[1];
    string statsFile = argv[2];
    string sDays = argv[3];
-   int Days = stoi(sDays);
+   gDays = stoi(sDays);
 
    readEvent(eventFile);
    cout << "===========================================================" << endl;
