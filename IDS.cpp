@@ -16,6 +16,10 @@ int main(int argc, char const *argv[]) {
    readEvent(eventFile);
    cout << "===========================================================" << endl;
    readStats(statsFile);
+
+      gEngine.genInstances();
+
+
    return 0;
 }
 
