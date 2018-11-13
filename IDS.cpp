@@ -4,34 +4,72 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-   if (argc != 4) {
+      if (argc != 4) {
       cout << argv[0] << " EventFile.txt StatsFile.txt Days" << endl;
       return -1;
-   }
+      }
 
-   string eventFile = argv[1];
-   string statsFile = argv[2];
-   string sDays = argv[3];
-   string line;
-   int eventSize, statSize, liveSize, liveDays;
-   gDays = stoi(sDays);
-   if (gDays < 25) {
+      string eventFile = argv[1];
+      string statsFile = argv[2];
+      string sDays = argv[3];
+      string line;
+      int eventSize, statSize, liveSize, liveDays;
+      gDays = stoi(sDays);
+      if (gDays < 25) {
       cout << "/// Warning: Low sample size ///" << endl;
-   }
+      }
 
-   eventSize = readEvent(eventFile);
-   cout << endl;
-   statSize = readStats(statsFile);
-   if (eventSize != statSize) {
+      eventSize = readEvent(eventFile);
+      cout << endl;
+      statSize = readStats(statsFile);
+      if (eventSize != statSize) {
       cout << "eventSize != statSize" << endl;
-   }
-   gEngine.genInstances(gDays);
-   cout << "Enter Live Stat file" << endl;
-   getline(cin,line);
-   liveSize = readLive(line);
-   cout << "Enter Live Stat days" << endl;
-   getline(cin,line);
-   liveDays = stoi(line);
+      }
+
+// #############################################
+
+      /* Do the base statistics generation */
+      gEngine.gen_sample(gDays);
+      gEngine.clear_sample_data();
+
+      /* Loop for next phase */
+      bool quit = false;
+      int option;
+      while(!quit){
+
+            cout << "\n\n1) Analyize new data" << endl;
+            cout << "2) Quit program" << endl;
+
+            std::cout << "\nEnter option: ";
+            std::cin >> option;
+            cin.clear();
+            cin.ignore();
+            switch(option){
+                  case 1: 
+                        /* Read and create live samples */
+                        cout << "Enter Live Stat file: ";
+                        getline(cin,line);
+                        liveSize = readLive(line);
+                        cout << "Enter Live Stat days: ";
+                        getline(cin,line);
+                        liveDays = stoi(line);
+                        gEngine.gen_sample_live(liveDays);
+
+                        /* Do Alert analysis */
+                        
+
+                        /* Clear Live Instances */      
+                        break;
+                  case 2: quit = true;
+                        break;
+                  default: std::cout << "Wrong choice!" <<std::endl;
+                        break;
+            }
+      }
+
+
+
+   
    return 0;
 }
 
@@ -162,7 +200,7 @@ int readLive(string fileName){
          sSD = stod(stSD);
          cout << sName << " " << sMean << " " << sSD << endl;
          //Stat newStat(sName, sMean, sSD);
-         gEngine.push_stat(Stat(sName, sMean, sSD));
+         gEngine.push_stat_live(Stat(sName, sMean, sSD));
       }
    }
    cout << "Closing file" << endl;
