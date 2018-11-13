@@ -23,7 +23,7 @@ void Engine::genInstances(int days){
     random_device rd;
     mt19937 gen(rd());
         for(auto const& value: this->gStats) {
-            
+
             std::cout << "########################## " <<value.second.Name <<  std::endl;
 
             for(int i=0; i< days; i++){
@@ -43,7 +43,7 @@ void Engine::genInstances(int days){
 }
 
 void Engine::clearInstances(){
-
+   // Write to file and flush
 }
 
 void Engine::clearEvents(){

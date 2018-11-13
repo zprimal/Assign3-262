@@ -14,7 +14,7 @@ int main(int argc, char const *argv[]) {
    string sDays = argv[3];
    gDays = stoi(sDays);
    if (gDays < 25) {
-      cout << "/// Warning: Lowered sample size ///" << endl;
+      cout << "/// Warning: Low sample size ///" << endl;
    }
 
    readEvent(eventFile);
@@ -32,7 +32,7 @@ void readEvent(string fileName){
    string line;
 	file.open(fileName);
    int size = 0;
-   int counter = 0;
+
    if(file.fail()){
 		cout << "Error reading file!" << endl;
 	} else {
@@ -40,8 +40,7 @@ void readEvent(string fileName){
       getline(file,line);
       size = stoi(line);
       cout << "Size = " << size << endl;
-      while (counter < size) {
-         getline(file,line);
+      while (getline(file,line)) {
          stringstream linestream(line);
          string eName, stCD, stMin, stMax, stWgt;
          bool eCD;
@@ -88,7 +87,6 @@ void readStats(string fileName){
    string line;
 	file.open(fileName);
    int size = 0;
-   int counter = 0;
 
    if(file.fail()){
 		cout << "Error reading file!" << endl;
@@ -97,8 +95,7 @@ void readStats(string fileName){
       getline(file,line);
       size = stoi(line);
       cout << "Size = " << size << endl;
-      while (counter < size) {
-         getline(file,line);
+      while (getline(file,line)) {
          stringstream linestream(line);
          string sName, stMean, stSD;
          double sMean, sSD;
