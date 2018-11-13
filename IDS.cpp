@@ -24,6 +24,7 @@ void readEvent(string fileName){
    string line;
 	file.open(fileName);
    int size = 0;
+   int counter = 0;
    if(file.fail()){
 		cout << "Error reading file!" << endl;
 	} else {
@@ -31,7 +32,8 @@ void readEvent(string fileName){
       getline(file,line);
       size = stoi(line);
       cout << "Size = " << size << endl;
-      while (getline(file,line)) {
+      while (counter < size) {
+         getline(file,line);
          stringstream linestream(line);
          string eName, stCD, stMin, stMax, stWgt;
          bool eCD;
@@ -64,8 +66,9 @@ void readEvent(string fileName){
          }
 
          cout << eName << " " << eCD << " " << eMin << " " << eMax << " " << eWgt << endl;
-         Event newEvent(eName, eCD, eMin, eMax, eWgt);
-         gEngine.push_event(newEvent);
+         //Event newEvent(eName, eCD, eMin, eMax, eWgt);
+         gEngine.push_event(Event(eName, eCD, eMin, eMax, eWgt));
+         counter++;
       }
    }
    cout << "Closing file" << endl;
@@ -77,6 +80,7 @@ void readStats(string fileName){
    string line;
 	file.open(fileName);
    int size = 0;
+   int counter = 0;
 
    if(file.fail()){
 		cout << "Error reading file!" << endl;
@@ -85,7 +89,8 @@ void readStats(string fileName){
       getline(file,line);
       size = stoi(line);
       cout << "Size = " << size << endl;
-      while (getline(file,line)) {
+      while (counter < size) {
+         getline(file,line);
          stringstream linestream(line);
          string sName, stMean, stSD;
          double sMean, sSD;
@@ -95,13 +100,13 @@ void readStats(string fileName){
          getline(linestream, stMean, ':');
          getline(linestream, stSD, ':');
 
-
          //Variables into glob variables
          sMean = stod(stMean);
          sSD = stod(stSD);
          cout << sName << " " << sMean << " " << sSD << endl;
-         Stat newStat(sName, sMean, sSD);
-         gEngine.push_stat(newStat);
+         //Stat newStat(sName, sMean, sSD);
+         gEngine.push_stat(Stat(sName, sMean, sSD));
+         counter++;
       }
    }
    cout << "Closing file" << endl;
