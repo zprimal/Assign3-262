@@ -22,23 +22,23 @@ void Engine::startEngine(int Day){
 void Engine::genInstances(int days){
     random_device rd;
     mt19937 gen(rd());
-        for(auto const& value: this->gStats) {
-            
-            std::cout << "########################## " <<value.second.Name <<  std::endl;
+    for(auto const& it: this->gStats) {
+        
+        std::cout << "########################## " <<it.second.Name <<  std::endl;
 
-            for(int i=0; i< days; i++){
-                std::normal_distribution<> d(value.second.Mean, value.second.stdDev);
-                int n = round(d(gen));
+        for(int i=0; i< days; i++){
+            std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
+            int n = (d(gen));
 
-                event_data newevent;
-                newevent.value = n;
-                eventdata.insert(make_pair<>(value.second.Name, newevent));
-                cout << n << endl;
-                // for (int i =0 ; i < n ; i++){
-                //     std::normal_distribution<> e(value.second.Mean, value.second.stdDev);
-                //     std::cout << round(d(gen)) << std::endl;
-                // }
-            }
+            event_data newevent;
+            newevent.value = n;
+            eventdata.insert(make_pair<>(it.second.Name, newevent));
+            cout << n << endl;
+            // for (int i =0 ; i < n ; i++){
+            //     std::normal_distribution<> e(value.second.Mean, value.second.stdDev);
+            //     std::cout << round(d(gen)) << std::endl;
+            // }
+        }
     }
 }
 

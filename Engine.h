@@ -26,7 +26,9 @@ private:
    map<string, Event> gEvents;
    map<string, Stat> gStats;
    map<string, event_data> eventdata;
-
+    map<string, Stat> testStat;
+    map<string, Stat> liveStat;
+    
 public:
    Engine();
    ~Engine();
