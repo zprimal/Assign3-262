@@ -13,6 +13,9 @@ int main(int argc, char const *argv[]) {
    string statsFile = argv[2];
    string sDays = argv[3];
    gDays = stoi(sDays);
+   if (gDays < 25) {
+      cout << "/// Warning: Lowered sample size ///" << endl;
+   }
 
    readEvent(eventFile);
    cout << "===========================================================" << endl;
