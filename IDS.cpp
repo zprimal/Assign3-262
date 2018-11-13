@@ -12,22 +12,30 @@ int main(int argc, char const *argv[]) {
    string eventFile = argv[1];
    string statsFile = argv[2];
    string sDays = argv[3];
+   string line;
+   int eventSize, statSize, liveSize, liveDays;
    gDays = stoi(sDays);
    if (gDays < 25) {
       cout << "/// Warning: Low sample size ///" << endl;
    }
 
-   readEvent(eventFile);
-   cout << "===========================================================" << endl;
-   readStats(statsFile);
-
-      gEngine.genInstances(gDays);
-
-
+   eventSize = readEvent(eventFile);
+   cout << endl;
+   statSize = readStats(statsFile);
+   if (eventSize != statSize) {
+      cout << "eventSize != statSize" << endl;
+   }
+   gEngine.genInstances(gDays);
+   cout << "Enter Live Stat file" << endl;
+   getline(cin,line);
+   liveSize = readLive(line);
+   cout << "Enter Live Stat days" << endl;
+   getline(cin,line);
+   liveDays = stoi(line);
    return 0;
 }
 
-void readEvent(string fileName){
+int readEvent(string fileName){
    ifstream file;
    string line;
 	file.open(fileName);
@@ -79,9 +87,10 @@ void readEvent(string fileName){
    }
    cout << "Closing file" << endl;
    file.close();
+   return size;
 }
 
-void readStats(string fileName){
+int readStats(string fileName){
    ifstream file;
    string line;
 	file.open(fileName);
@@ -114,6 +123,7 @@ void readStats(string fileName){
    }
    cout << "Closing file" << endl;
    file.close();
+   return size;
 }
 
 void displayEvent(){
@@ -122,4 +132,40 @@ void displayEvent(){
 
 void displayStats(){
 
+}
+
+int readLive(string fileName){
+   ifstream file;
+   string line;
+	file.open(fileName);
+   int size = 0;
+
+   if(file.fail()){
+		cout << "Error reading file!" << endl;
+	} else {
+      cout << "Reading livestat file..." << endl;
+      getline(file,line);
+      size = stoi(line);
+      cout << "Size = " << size << endl;
+      while (getline(file,line)) {
+         stringstream linestream(line);
+         string sName, stMean, stSD;
+         double sMean, sSD;
+
+         //Get variables in line
+         getline(linestream, sName, ':');
+         getline(linestream, stMean, ':');
+         getline(linestream, stSD, ':');
+
+         //Variables into glob variables
+         sMean = stod(stMean);
+         sSD = stod(stSD);
+         cout << sName << " " << sMean << " " << sSD << endl;
+         //Stat newStat(sName, sMean, sSD);
+         gEngine.push_stat(Stat(sName, sMean, sSD));
+      }
+   }
+   cout << "Closing file" << endl;
+   file.close();
+   return size;
 }
