@@ -75,7 +75,6 @@ void readEvent(string fileName){
          cout << eName << " " << eCD << " " << eMin << " " << eMax << " " << eWgt << endl;
          //Event newEvent(eName, eCD, eMin, eMax, eWgt);
          gEngine.push_event(Event(eName, eCD, eMin, eMax, eWgt));
-         counter++;
       }
    }
    cout << "Closing file" << endl;
@@ -111,7 +110,6 @@ void readStats(string fileName){
          cout << sName << " " << sMean << " " << sSD << endl;
          //Stat newStat(sName, sMean, sSD);
          gEngine.push_stat(Stat(sName, sMean, sSD));
-         counter++;
       }
    }
    cout << "Closing file" << endl;
