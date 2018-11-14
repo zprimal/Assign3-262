@@ -32,8 +32,13 @@ void Engine::gen_sample(int days){
         for(int i=0; i < days; i++){
 			std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
 			int n = (d(gen));
-
-			tmp.push_back(n);
+            // check for bounds
+            if (n >= this->gEvents.find(it.second.Name)->second.Min || n <= this->gEvents.find(it.second.Name)->second.Max){
+                tmp.push_back(n);
+                continue;
+            }else{
+                i--;
+            }
         }
         eventdata.insert(make_pair<>(it.second.Name, tmp));
     }
@@ -52,8 +57,13 @@ void Engine::gen_sample_live(int days){
         for(int i=0; i< days; i++){
 			std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
 			int n = (d(gen));
-
-			tmp.push_back(n);
+            // check for bounds
+            if (n >= this->gEvents.find(it.second.Name)->second.Min || n <= this->gEvents.find(it.second.Name)->second.Max){
+                tmp.push_back(n);
+                continue;
+            }else{
+                i--;
+            }
         }
         eventdata.insert(make_pair<>(it.second.Name, tmp));
     }
