@@ -106,10 +106,14 @@ int readEvent(string fileName){
 
          if (!stMin.empty()) {
             eMin = stod(stMin, NULL);
+         }{
+               eMin = 0;
          }
 
          if (!stMax.empty()) {
             eMax = stod(stMax, NULL);
+         }else{
+               eMax = -1;
          }
 
          if (!stWgt.empty()) {
