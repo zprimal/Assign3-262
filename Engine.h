@@ -59,7 +59,7 @@ public:
     // double getSMean(string);
     // double getSSD(string);
     double checkAnomaly(string, double);
-    void Alertium();
+    void Alertium(int);
 };
 
 #endif

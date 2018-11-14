@@ -193,25 +193,54 @@ double Engine::checkAnomaly(string eventName, double sampleData){
    }
 }
 
-void Engine::Alertium(){
+void Engine::Alertium(int liveDays){
    cout << "=====================\nAlert Engine starting up" << endl;
+   // Count total event anomaly threshold for one day
+   double threshold = 0; // Generate anomaly threshold
    for (auto i = eventdata.begin(); i != eventdata.end(); i++) {
       string tmpName = i->first;
       vector<double> tmpVector = i->second;
       double weight = getEWeight(tmpName);
-      double threshold = weight * 2; // Generate anomaly threshold
-      int dayC = 1;
-      cout << tmpName << endl;
-      for (auto j = tmpVector.begin(); j != tmpVector.end(); j++) {
-         //Run for each entry in the vector
-         double off = checkAnomaly(tmpName, *j);
-         if (off >= threshold) {
-            cout << "[ALERT] Day " << dayC << ": " << *j << " Off the mean by " << off << endl;
-         }
-
-         dayC++;
-      }
-
+      threshold = threshold + weight;
    }
+   threshold = threshold*2;
+
+   // Run event data for each day
+   for (int a = 0; a < liveDays; a++) {
+      double dailyOff = 0;
+      vector<double> tmpVector;
+      for (auto i = eventdata.begin(); i != eventdata.end(); i++) {
+         string tmpName = i->first;
+         tmpVector = i->second;
+         double off = checkAnomaly(tmpName, tmpVector[a]);
+
+         // get total event anomaly for each day
+         dailyOff = dailyOff + off;
+      }
+      // Compare against total event anomaly
+      if (dailyOff >= threshold) {
+         cout << "[ALERT] Day " << a+1 << ": " << tmpVector[a] << " Off by " << dailyOff << endl;
+      }
+   }
+
+   //ORIGINAL CODE
+   // for (auto i = eventdata.begin(); i != eventdata.end(); i++) {
+   //    string tmpName = i->first;
+   //    vector<double> tmpVector = i->second;
+   //    double weight = getEWeight(tmpName);
+   //    double threshold = weight * 2; // Generate anomaly threshold
+   //    int dayC = 1;
+   //    cout << tmpName << endl;
+   //    for (auto j = tmpVector.begin(); j != tmpVector.end(); j++) {
+   //       //Run for each entry in the vector
+   //       double off = checkAnomaly(tmpName, *j);
+   //       if (off >= threshold) {
+   //          cout << "[ALERT] Day " << dayC << ": " << *j << " Off the mean by " << off << endl;
+   //       }
+   //
+   //       dayC++;
+   //    }
+   //
+   // }
    cout << "=====================\nAlertium complete\n=====================" << endl;
 }

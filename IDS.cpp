@@ -58,7 +58,7 @@ int main(int argc, char const *argv[]) {
             gEngine.gen_sample_live(liveDays);
 
             /* Do Alert analysis */
-            gEngine.Alertium();
+            gEngine.Alertium(liveDays);
 
             /* Clear Live Instances */
             break;
