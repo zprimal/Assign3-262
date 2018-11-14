@@ -30,8 +30,11 @@ void Engine::gen_sample(int days){
     for(auto const& it: this->gStats) {
         vector<double> tmp;
         for(int i=0; i < days; i++){
-			std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
-			int n = (d(gen));
+			std::normal_distribution<float> d(it.second.Mean, it.second.stdDev);
+			double n = (d(gen));
+            // if descreet round it off
+            if(this->gEvents.find(it.second.Name)->second.Continuous == false)
+                n = round(n);
             // check for bounds
             if (n >= this->gEvents.find(it.second.Name)->second.Min || n <= this->gEvents.find(it.second.Name)->second.Max){
                 tmp.push_back(n);
@@ -44,7 +47,10 @@ void Engine::gen_sample(int days){
     }
 
 	// for(auto const& it: this->eventdata) {
-	// 	std::cout << it.first << " "<<  it.second.value << std::endl;
+	// 	std::cout << it.first << " YOOO  ";
+    //     	for(auto const& it2: it.second){
+    //             cout << it2 << endl;
+    //         }
 	// }
 
 }
@@ -55,8 +61,12 @@ void Engine::gen_sample_live(int days){
     for(auto const& it: this->liveStat) {
       vector<double> tmp;
         for(int i=0; i< days; i++){
-			std::normal_distribution<> d(it.second.Mean, it.second.stdDev);
-			int n = (d(gen));
+			std::normal_distribution<float> d(it.second.Mean, it.second.stdDev);
+			double n = (d(gen));
+            // if descreet round it off
+            if(this->gEvents.find(it.second.Name)->second.Continuous == false)
+                n = round(n);
+
             // check for bounds
             if (n >= this->gEvents.find(it.second.Name)->second.Min || n <= this->gEvents.find(it.second.Name)->second.Max){
                 tmp.push_back(n);
@@ -69,7 +79,10 @@ void Engine::gen_sample_live(int days){
     }
 
 	// for(auto const& it: this->eventdata) {
-	// 	std::cout << it.first << " "<<  it.second.value << std::endl;
+	// 	std::cout << it.first << " YOOO  ";
+    //     	for(auto const& it2: it.second){
+    //             cout << it2 << endl;
+    //         }
 	// }
 
 }
