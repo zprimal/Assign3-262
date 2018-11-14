@@ -58,7 +58,7 @@ int main(int argc, char const *argv[]) {
             gEngine.getLiveStat();
 
             /* Do Alert analysis */
-
+            gEngine.Alertium();
 
             /* Clear Live Instances */
             break;

@@ -53,6 +53,13 @@ public:
     void getLiveStat();
     double getMean(vector<double>);
     double getSD(vector<double>, double);
+
+    //Alert Module
+    double getEWeight(string);
+    double getSMean(string);
+    double getSSD(string);
+    int checkAnomaly(string, double);
+    void Alertium();
 };
 
 #endif

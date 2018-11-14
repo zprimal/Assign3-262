@@ -129,3 +129,61 @@ double Engine::getSD(vector<double> leVector, double leMean){
    }
    return sqrt(SD/counter);
 }
+
+double Engine::getEWeight(string eventName){
+   auto it = this->gEvents.find(eventName);
+   Event tmpEvent = it->second;
+   return tmpEvent.Wgt;
+}
+
+double Engine::getSMean(string eventName){
+   auto it = this->gStats.find(eventName);
+   Stat tmpStat = it->second;
+   return tmpStat.Mean;
+}
+
+double Engine::getSSD(string eventName){
+   auto it = this->gStats.find(eventName);
+   Stat tmpStat = it->second;
+   return tmpStat.stdDev;
+}
+
+int Engine::checkAnomaly(string eventName, double sampleData){
+   double mean = getSMean(eventName);
+   double sd = getSSD(eventName);
+   double holder = sampleData;
+   int i = 0; // Counts how many SD from the mean
+   if (mean == sampleData) {
+      return 0;
+   } else if (mean < holder) {
+      while (mean < holder) {
+         holder = holder - sd;
+         i++;
+      }
+      return i--;
+   } else {
+      while (mean > sampleData) {
+         holder = holder + sd;
+         i++;
+      }
+      return i--;
+   }
+}
+
+void Engine::Alertium(){
+   for (auto i = eventdata.begin(); i != eventdata.end(); i++) {
+      string tmpName = i->first;
+      vector<double> tmpVector = i->second;
+      for (auto j = tmpVector.begin(); j != tmpVector.end(); j++) {
+         //Run for each entry in the vector
+         double weight = getEWeight(tmpName);
+         double threshold = weight * 2;
+         int off = checkAnomaly(tmpName, *j);
+         if (off > threshold) {
+            cout << "Out of threshold" << endl;
+         }
+
+      }
+
+   }
+}
