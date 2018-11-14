@@ -56,9 +56,9 @@ public:
 
     //Alert Module
     double getEWeight(string);
-    double getSMean(string);
-    double getSSD(string);
-    int checkAnomaly(string, double);
+    // double getSMean(string);
+    // double getSSD(string);
+    double checkAnomaly(string, double);
     void Alertium();
 };
 
