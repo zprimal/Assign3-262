@@ -54,8 +54,8 @@ int main(int argc, char const *argv[]) {
             cout << "Enter Live Stat days: ";
             getline(cin,line);
             liveDays = stoi(line);
-            gEngine.gen_sample_live(liveDays);
             gEngine.getLiveStat();
+            gEngine.gen_sample_live(liveDays);
 
             /* Do Alert analysis */
             gEngine.Alertium();
