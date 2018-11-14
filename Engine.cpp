@@ -77,6 +77,8 @@ int Engine::checkEventStats(){
 
    // Mean exceeds min-max
 
+   //Check if live stats matches event names
+
 
 }
 
@@ -171,6 +173,7 @@ int Engine::checkAnomaly(string eventName, double sampleData){
 }
 
 void Engine::Alertium(){
+   cout << "Alert Engine starting up" << endl;
    for (auto i = eventdata.begin(); i != eventdata.end(); i++) {
       string tmpName = i->first;
       vector<double> tmpVector = i->second;
