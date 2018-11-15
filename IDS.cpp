@@ -61,6 +61,7 @@ int main(int argc, char const *argv[]) {
             gEngine.Alertium();
 
             /* Clear Live Instances */
+
             break;
          case 2: quit = true;
             break;
@@ -120,7 +121,7 @@ int readEvent(string fileName){
             eWgt = stod(stWgt, NULL);
          }
 
-         cout << eName << " " << eCD << " " << eMin << " " << eMax << " " << eWgt << endl;
+      //    cout << eName << " " << eCD << " " << eMin << " " << eMax << " " << eWgt << endl;
          //Event newEvent(eName, eCD, eMin, eMax, eWgt);
          gEngine.push_event(Event(eName, eCD, eMin, eMax, eWgt));
       }
@@ -131,10 +132,17 @@ int readEvent(string fileName){
 }
 
 int readStats(string fileName){
-   ifstream file;
-   string line;
-	file.open(fileName);
-   int size = 0;
+      ifstream file;
+      string line;
+      file.open(fileName);
+      int size = 0;
+
+      std::ofstream myfile;
+      myfile.open("logfile.txt");
+      myfile << "--------------------" <<endl;
+      myfile << "Training Stat" <<endl;
+      myfile << "--------------------" <<endl;
+
 
    if(file.fail()){
 		cout << "Error reading file!" << endl;
@@ -156,13 +164,15 @@ int readStats(string fileName){
          //Variables into glob variables
          sMean = stod(stMean);
          sSD = stod(stSD);
-         cout << sName << " " << sMean << " " << sSD << endl;
+      //    cout << sName << " " << sMean << " " << sSD << endl;
+         myfile <<  sName << ":" << sMean << ":" << sSD << endl;
          //Stat newStat(sName, sMean, sSD);
          gEngine.push_stat(Stat(sName, sMean, sSD));
       }
    }
    cout << "Closing file" << endl;
    file.close();
+   myfile.close();
    return size;
 }
 

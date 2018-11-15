@@ -12,6 +12,7 @@
 #include "Event.h"
 #include <cstdint>
 #include <random>
+#include <fstream>
 
 
 using namespace std;
@@ -37,6 +38,10 @@ public:
     Engine();
     ~Engine();
 
+
+    // logging file handle
+    std::ofstream myfile;
+
     void push_event(Event);
     void push_stat(Stat);
     void startEngine(int);
@@ -60,6 +65,7 @@ public:
     // double getSSD(string);
     double checkAnomaly(string, double);
     void Alertium();
+
 };
 
 #endif
