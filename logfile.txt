@@ -9,347 +9,405 @@ Emails deleted:7:2.25
 --------------------
 Training Sample Data
 --------------------
-<<<<<<< HEAD
-Emails deleted:1
-Emails opened:15
-Emails sent:11
-Logins:3
-Time online:100.936
-
-Emails deleted:9
-Emails opened:18
-Emails sent:11
-Logins:8
-Time online:169.331
-
-Emails deleted:7
-Emails opened:8
-Emails sent:10
-Logins:7
-Time online:179.283
-
-Emails deleted:10
-Emails opened:6
-Emails sent:12
-Logins:3
-Time online:135.665
-
-Emails deleted:7
-Emails opened:12
-Emails sent:8
-Logins:4
-Time online:148.515
-
-Emails deleted:10
-Emails opened:13
-Emails sent:13
-Logins:1
-Time online:171.768
-
-Emails deleted:7
-Emails opened:13
-Emails sent:12
-Logins:3
-Time online:144.879
-
-Emails deleted:8
-Emails opened:9
-Emails sent:8
-Logins:4
-Time online:185.101
-
-Emails deleted:6
-Emails opened:8
-Emails sent:1
-Logins:5
-Time online:120.827
-
-Emails deleted:5
-Emails opened:13
-Emails sent:11
-Logins:4
-Time online:204.206
-
-Emails deleted:7
-Emails opened:8
-Emails sent:9
-Logins:3
-Time online:153.773
-
-Emails deleted:10
-Emails opened:12
-Emails sent:13
-Logins:6
-Time online:107.512
-
-Emails deleted:6
-Emails opened:15
-Emails sent:12
-Logins:5
-Time online:157.618
-
-Emails deleted:9
-Emails opened:10
-Emails sent:11
-Logins:2
-Time online:174.663
-
-Emails deleted:8
-Emails opened:11
-Emails sent:16
-Logins:5
-Time online:136.675
-
-Emails deleted:8
-Emails opened:7
-Emails sent:7
-Logins:3
-Time online:162.46
-
-Emails deleted:4
-Emails opened:6
-Emails sent:13
-Logins:5
-Time online:168.925
-
-Emails deleted:6
-Emails opened:11
-Emails sent:9
-Logins:1
-Time online:177.407
-
-Emails deleted:7
-Emails opened:15
-Emails sent:11
-Logins:1
-Time online:131.65
-
-Emails deleted:4
-Emails opened:17
-Emails sent:6
-Logins:3
-Time online:119.204
-
-Emails deleted:8
-Emails opened:11
-Emails sent:8
-Logins:3
-Time online:94.69
-
-Emails deleted:10
-Emails opened:13
-Emails sent:5
-Logins:2
-Time online:96.0032
-
-Emails deleted:7
-Emails opened:13
-Emails sent:7
-Logins:3
-Time online:150.363
-
-Emails deleted:7
-Emails opened:19
-Emails sent:10
-Logins:2
-Time online:135.449
-
-Emails deleted:7
-Emails opened:19
-Emails sent:9
-Logins:6
-Time online:147.583
-
-Emails deleted:6
-Emails opened:10
-Emails sent:13
-Logins:5
-Time online:162.265
-
-Emails deleted:5
-Emails opened:13
-Emails sent:9
-Logins:3
-Time online:168.951
-
-Emails deleted:8
-Emails opened:9
-Emails sent:13
-Logins:3
-Time online:139.441
-
-Emails deleted:8
-Emails opened:5
-Emails sent:11
-Logins:5
-Time online:139.624
-
-Emails deleted:10
-Emails opened:12
-Emails sent:7
-Logins:4
-Time online:161.138
-
-Emails deleted:4
-Emails opened:8
-Emails sent:10
-Logins:3
-Time online:169.235
-
-Emails deleted:5
-Emails opened:20
-Emails sent:8
-Logins:4
-Time online:163.476
-
-Emails deleted:7
-Emails opened:12
-Emails sent:7
-Logins:3
-Time online:90.9076
-
-Emails deleted:10
-Emails opened:19
-Emails sent:9
-Logins:6
-Time online:154.135
-
-Emails deleted:6
-Emails opened:7
-Emails sent:11
-Logins:4
-Time online:146.581
-
-Emails deleted:6
-Emails opened:19
-Emails sent:9
-Logins:3
-Time online:173.774
-
-Emails deleted:6
-Emails opened:18
-Emails sent:14
-Logins:3
-Time online:195.722
-
-Emails deleted:11
-Emails opened:15
-Emails sent:8
-Logins:5
-Time online:161.611
-
-Emails deleted:6
-Emails opened:10
-Emails sent:4
-Logins:5
-Time online:147.433
-
-Emails deleted:9
-Emails opened:7
-Emails sent:9
-Logins:3
-Time online:145.732
-
-Emails deleted:8
-Emails opened:10
-Emails sent:11
-Logins:4
-Time online:220.31
-
-Emails deleted:9
-Emails opened:14
-Emails sent:5
-Logins:4
-Time online:154.902
-
-Emails deleted:8
-Emails opened:9
-Emails sent:15
-Logins:2
-Time online:187.359
-
-Emails deleted:9
-Emails opened:16
-Emails sent:7
-Logins:4
-Time online:141.009
-
-Emails deleted:10
-Emails opened:11
-Emails sent:10
-Logins:5
-Time online:139.735
-
-Emails deleted:7
-Emails opened:9
-Emails sent:13
-Logins:4
-Time online:126.611
-
-Emails deleted:8
-Emails opened:9
-Emails sent:12
-Logins:2
-Time online:144.384
-
-Emails deleted:7
-Emails opened:5
-Emails sent:7
-Logins:2
-Time online:169.038
-
-Emails deleted:7
-Emails opened:16
-Emails sent:8
-Logins:3
-Time online:187.233
-
-Emails deleted:8
-Emails opened:8
-Emails sent:8
-Logins:6
-Time online:175.233
-=======
 Day 1
  ---- 
-Emails deleted:12
-Emails opened:10
-Emails sent:10
-Logins:3
-Time online:170.218
+Emails deleted:8
+Emails opened:11
+Emails sent:6
+Logins:5
+Time online:181.059
 
 Day 2
  ---- 
-Emails deleted:6
-Emails opened:2
-Emails sent:9
+Emails deleted:5
+Emails opened:13
+Emails sent:10
 Logins:4
-Time online:166.246
+Time online:162.819
 
 Day 3
  ---- 
-Emails deleted:7
-Emails opened:12
-Emails sent:14
-Logins:4
-Time online:218.983
+Emails deleted:6
+Emails opened:13
+Emails sent:9
+Logins:2
+Time online:159.391
 
 Day 4
  ---- 
-Emails deleted:8
+Emails deleted:7
 Emails opened:12
-Emails sent:10
-Logins:3
-Time online:161.629
+Emails sent:7
+Logins:4
+Time online:141.088
 
 Day 5
  ---- 
+Emails deleted:7
+Emails opened:15
+Emails sent:9
+Logins:5
+Time online:200.707
+
+Day 6
+ ---- 
 Emails deleted:8
+Emails opened:12
+Emails sent:13
+Logins:6
+Time online:141.195
+
+Day 7
+ ---- 
+Emails deleted:6
+Emails opened:19
+Emails sent:11
+Logins:4
+Time online:156.883
+
+Day 8
+ ---- 
+Emails deleted:6
+Emails opened:14
+Emails sent:12
+Logins:5
+Time online:183.574
+
+Day 9
+ ---- 
+Emails deleted:10
 Emails opened:11
+Emails sent:15
+Logins:3
+Time online:198.097
+
+Day 10
+ ---- 
+Emails deleted:5
+Emails opened:14
+Emails sent:8
+Logins:4
+Time online:188.093
+
+Day 11
+ ---- 
+Emails deleted:9
+Emails opened:12
+Emails sent:6
+Logins:3
+Time online:134.904
+
+Day 12
+ ---- 
+Emails deleted:6
+Emails opened:17
+Emails sent:11
+Logins:3
+Time online:154.734
+
+Day 13
+ ---- 
+Emails deleted:5
+Emails opened:7
+Emails sent:6
+Logins:4
+Time online:150.624
+
+Day 14
+ ---- 
+Emails deleted:4
+Emails opened:12
+Emails sent:11
+Logins:3
+Time online:151.342
+
+Day 15
+ ---- 
+Emails deleted:7
+Emails opened:9
+Emails sent:13
+Logins:5
+Time online:140.82
+
+Day 16
+ ---- 
+Emails deleted:7
+Emails opened:8
+Emails sent:7
+Logins:2
+Time online:146.148
+
+Day 17
+ ---- 
+Emails deleted:5
+Emails opened:20
+Emails sent:15
+Logins:5
+Time online:153.853
+
+Day 18
+ ---- 
+Emails deleted:8
+Emails opened:15
+Emails sent:5
+Logins:3
+Time online:168.559
+
+Day 19
+ ---- 
+Emails deleted:4
+Emails opened:18
+Emails sent:2
+Logins:3
+Time online:144.65
+
+Day 20
+ ---- 
+Emails deleted:11
+Emails opened:17
 Emails sent:10
 Logins:5
-Time online:134.264
->>>>>>> 2b92a1ee0b7db65acd371a4d3c47da0ad871ff45
+Time online:185.786
+
+Day 21
+ ---- 
+Emails deleted:6
+Emails opened:18
+Emails sent:9
+Logins:4
+Time online:161.485
+
+Day 22
+ ---- 
+Emails deleted:3
+Emails opened:15
+Emails sent:13
+Logins:4
+Time online:128.057
+
+Day 23
+ ---- 
+Emails deleted:5
+Emails opened:5
+Emails sent:8
+Logins:7
+Time online:116.187
+
+Day 24
+ ---- 
+Emails deleted:9
+Emails opened:7
+Emails sent:9
+Logins:2
+Time online:160.031
+
+Day 25
+ ---- 
+Emails deleted:9
+Emails opened:13
+Emails sent:7
+Logins:3
+Time online:173.889
+
+Day 26
+ ---- 
+Emails deleted:6
+Emails opened:1
+Emails sent:9
+Logins:3
+Time online:132.805
+
+Day 27
+ ---- 
+Emails deleted:8
+Emails opened:11
+Emails sent:9
+Logins:5
+Time online:149.35
+
+Day 28
+ ---- 
+Emails deleted:6
+Emails opened:9
+Emails sent:13
+Logins:4
+Time online:180.526
+
+Day 29
+ ---- 
+Emails deleted:8
+Emails opened:7
+Emails sent:10
+Logins:4
+Time online:159.157
+
+Day 30
+ ---- 
+Emails deleted:4
+Emails opened:14
+Emails sent:10
+Logins:4
+Time online:116.16
+
+Day 31
+ ---- 
+Emails deleted:10
+Emails opened:12
+Emails sent:12
+Logins:7
+Time online:145.661
+
+Day 32
+ ---- 
+Emails deleted:6
+Emails opened:13
+Emails sent:16
+Logins:5
+Time online:138.77
+
+Day 33
+ ---- 
+Emails deleted:11
+Emails opened:16
+Emails sent:6
+Logins:5
+Time online:125.906
+
+Day 34
+ ---- 
+Emails deleted:4
+Emails opened:16
+Emails sent:4
+Logins:4
+Time online:117.431
+
+Day 35
+ ---- 
+Emails deleted:4
+Emails opened:13
+Emails sent:9
+Logins:5
+Time online:163.558
+
+Day 36
+ ---- 
+Emails deleted:7
+Emails opened:17
+Emails sent:11
+Logins:2
+Time online:148.924
+
+Day 37
+ ---- 
+Emails deleted:6
+Emails opened:15
+Emails sent:13
+Logins:5
+Time online:158.749
+
+Day 38
+ ---- 
+Emails deleted:10
+Emails opened:10
+Emails sent:11
+Logins:2
+Time online:158.699
+
+Day 39
+ ---- 
+Emails deleted:9
+Emails opened:6
+Emails sent:14
+Logins:2
+Time online:151.99
+
+Day 40
+ ---- 
+Emails deleted:4
+Emails opened:17
+Emails sent:8
+Logins:5
+Time online:130.161
+
+Day 41
+ ---- 
+Emails deleted:7
+Emails opened:13
+Emails sent:15
+Logins:4
+Time online:109.593
+
+Day 42
+ ---- 
+Emails deleted:11
+Emails opened:15
+Emails sent:12
+Logins:2
+Time online:209.699
+
+Day 43
+ ---- 
+Emails deleted:9
+Emails opened:20
+Emails sent:9
+Logins:3
+Time online:147.762
+
+Day 44
+ ---- 
+Emails deleted:5
+Emails opened:18
+Emails sent:15
+Logins:5
+Time online:98.925
+
+Day 45
+ ---- 
+Emails deleted:8
+Emails opened:12
+Emails sent:6
+Logins:0
+Time online:162.572
+
+Day 46
+ ---- 
+Emails deleted:5
+Emails opened:11
+Emails sent:9
+Logins:5
+Time online:117.858
+
+Day 47
+ ---- 
+Emails deleted:9
+Emails opened:20
+Emails sent:14
+Logins:2
+Time online:168.204
+
+Day 48
+ ---- 
+Emails deleted:9
+Emails opened:9
+Emails sent:9
+Logins:4
+Time online:168.63
+
+Day 49
+ ---- 
+Emails deleted:6
+Emails opened:15
+Emails sent:10
+Logins:8
+Time online:145.683
+
+Day 50
+ ---- 
+Emails deleted:10
+Emails opened:15
+Emails sent:10
+Logins:5
+Time online:106.229
 
 ########################### NEW TEST ##############################
 --------------------
@@ -363,166 +421,52 @@ Emails deleted:27:2.25
 --------------------
 Live Sample Data
 --------------------
-<<<<<<< HEAD
-Emails deleted:25
-Emails opened:4
-Emails sent:1003
-Logins:7
-Time online:302.094
-
-Emails deleted:31
-Emails opened:-1
-Emails sent:1002
-Logins:6
-Time online:303.624
-
-Emails deleted:28
-Emails opened:-0
-Emails sent:998
-Logins:6
-Time online:308.623
-
-Emails deleted:25
-Emails opened:-2
-Emails sent:1004
-Logins:6
-Time online:313.573
-
-Emails deleted:25
-Emails opened:-11
-Emails sent:1003
-Logins:4
-Time online:288.161
-
-Emails deleted:25
-Emails opened:-7
-Emails sent:999
-Logins:10
-Time online:312.873
-
-Emails deleted:28
-Emails opened:2
-Emails sent:1000
-Logins:6
-Time online:312.086
-
-Emails deleted:30
-Emails opened:-7
-Emails sent:1000
-Logins:5
-Time online:324.522
-=======
 Day 1
+ ---- 
+Emails deleted:28
+Emails opened:5
+Emails sent:998
+Logins:8
+Time online:320.1
+
+Day 2
+ ---- 
+Emails deleted:29
+Emails opened:7
+Emails sent:1000
+Logins:8
+Time online:263.658
+
+Day 3
  ---- 
 Emails deleted:26
-Emails opened:1
-Emails sent:1000
-Logins:6
-Time online:308.138
-
-Day 2
- ---- 
-Emails deleted:24
-Emails opened:-5
-Emails sent:1006
-Logins:5
-Time online:269.811
-
-Day 3
- ---- 
-Emails deleted:30
-Emails opened:6
-Emails sent:995
-Logins:5
-Time online:333.584
-
-Day 4
- ---- 
-Emails deleted:28
-Emails opened:1
-Emails sent:1001
-Logins:7
-Time online:318.674
-
-Day 5
- ---- 
-Emails deleted:28
-Emails opened:-3
-Emails sent:1005
-Logins:8
-Time online:240.968
-
---------------------
-Alert Log
---------------------
-[ALERT] Day 1: 308.138 Off by 348.528
-[ALERT] Day 2: 269.811 Off by 348.772
-[ALERT] Day 3: 333.584 Off by 347.879
-[ALERT] Day 4: 318.674 Off by 350.838
-[ALERT] Day 5: 240.968 Off by 350.619
-
-########################### NEW TEST ##############################
---------------------
-Live Stat
---------------------
-Logins:4:1.5
-Time online:150.5:25
-Emails sent:10:3
-Emails opened:12:4.5
-Emails deleted:7:2.25
---------------------
-Live Sample Data
---------------------
-Day 1
- ---- 
-Emails deleted:8
-Emails opened:6
-Emails sent:8
-Logins:4
-Time online:183.483
-
-Day 2
- ---- 
-Emails deleted:6
-Emails opened:10
-Emails sent:11
-Logins:6
-Time online:160.191
-
-Day 3
- ---- 
-Emails deleted:7
-Emails opened:9
-Emails sent:16
-Logins:2
-Time online:183.838
-
-Day 4
- ---- 
-Emails deleted:9
-Emails opened:24
-Emails sent:10
-Logins:5
-Time online:127.599
-
-Day 5
- ---- 
-Emails deleted:4
-Emails opened:11
-Emails sent:13
+Emails opened:3
+Emails sent:997
 Logins:3
-Time online:97.4315
->>>>>>> 2b92a1ee0b7db65acd371a4d3c47da0ad871ff45
+Time online:325.498
+
+Day 4
+ ---- 
+Emails deleted:28
+Emails opened:8
+Emails sent:1005
+Logins:6
+Time online:300.609
+
+Day 5
+ ---- 
+Emails deleted:28
+Emails opened:5
+Emails sent:1004
+Logins:5
+Time online:292.134
 
 --------------------
 Alert Log
 --------------------
-[ALERT] Day 1: 302.094 Off by 348.842
-[ALERT] Day 2: 303.624 Off by 351.681
-[ALERT] Day 3: 308.623 Off by 348.992
-[ALERT] Day 4: 313.573 Off by 350.301
-[ALERT] Day 5: 288.161 Off by 349.618
-[ALERT] Day 6: 312.873 Off by 352.384
-[ALERT] Day 7: 312.086 Off by 349.352
-[ALERT] Day 8: 324.522 Off by 352.072
+[ALERT] Day 1: 320.1 Off by 349.673
+[ALERT] Day 2: 263.658 Off by 348.082
+[ALERT] Day 3: 325.498 Off by 347.111
+[ALERT] Day 4: 300.609 Off by 349.227
+[ALERT] Day 5: 292.134 Off by 348.554
 

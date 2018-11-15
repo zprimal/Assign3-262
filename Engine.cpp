@@ -36,7 +36,7 @@ void Engine::gen_sample(int days){
             if(this->gEvents.find(it.second.Name)->second.Continuous == false)
                 n = round(n);
             // check for bounds
-            if (this->gEvents.find(it.second.Name)->second.Max == -1 || n <= this->gEvents.find(it.second.Name)->second.Max){
+            if (this->gEvents.find(it.second.Name)->second.Min <= n && (this->gEvents.find(it.second.Name)->second.Max == -1 || n <= this->gEvents.find(it.second.Name)->second.Max)){
                 tmp.push_back(n);
                 continue;
             }else{
@@ -75,7 +75,7 @@ void Engine::gen_sample_live(int days){
                 n = round(n);
 
             // check for bounds
-            if (this->gEvents.find(it.second.Name)->second.Max == -1 || n <= this->gEvents.find(it.second.Name)->second.Max){
+            if (this->gEvents.find(it.second.Name)->second.Min <= n && (this->gEvents.find(it.second.Name)->second.Max == -1 || n <= this->gEvents.find(it.second.Name)->second.Max)){
                 tmp.push_back(n);
                 continue;
             }else{
