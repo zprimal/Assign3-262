@@ -23,9 +23,10 @@ int main(int argc, char const *argv[]) {
    cout << endl;
    statSize = readStats(statsFile);
    if (eventSize != statSize) {
-      cout << "eventSize != statSize" << endl;
+      cout << "eventSize != statSize\nExiting program" << endl;
+      exit(0);
    }
-
+   gEngine.checkEventStats();
 // #############################################
 
    /* Do the base statistics generation */
@@ -51,6 +52,11 @@ int main(int argc, char const *argv[]) {
             cout << "Enter Live Stat file: ";
             getline(cin,line);
             liveSize = readLive(line);
+            if (liveSize != eventSize) {
+               cout << "liveSize != eventSize\nExiting program" << endl;
+               exit(0);
+            }
+            gEngine.checkEventLive();
             cout << "Enter Live Stat days: ";
             getline(cin,line);
             liveDays = stoi(line);
@@ -61,6 +67,8 @@ int main(int argc, char const *argv[]) {
             gEngine.Alertium(liveDays);
 
             /* Clear Live Instances */
+            gEngine.clear_live_stat();
+            gEngine.clear_sample_data();
             break;
          case 2: quit = true;
             break;

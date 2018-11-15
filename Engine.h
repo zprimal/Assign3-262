@@ -42,7 +42,8 @@ public:
     void startEngine(int);
     void gen_sample(int);
 
-    int checkEventStats();
+    void checkEventStats();
+    void checkEventLive();
 
     void push_stat_live(Stat);
     void gen_sample_live(int);
