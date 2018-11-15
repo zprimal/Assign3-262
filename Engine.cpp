@@ -51,6 +51,8 @@ void Engine::gen_sample(int days){
     this->myfile << "Training Sample Data" << endl;
     this->myfile << "--------------------" << endl;
     for (int i = 0; i < days ; i++){
+        this->myfile <<"Day "<< i+1 << endl;
+        this->myfile <<" ---- " << endl;
         for(auto const& it: this->eventdata) {
            this->myfile << it.first<< ":"<<  it.second.at(i) << endl;
         }
@@ -88,6 +90,8 @@ void Engine::gen_sample_live(int days){
     this->myfile << "Live Sample Data" << endl;
     this->myfile << "--------------------" << endl;
     for (int i = 0; i < days ; i++){
+        this->myfile <<"Day "<< i+1 << endl;
+        this->myfile <<" ---- " << endl;
         for(auto const& it: this->eventdata) {
            this->myfile << it.first<< ":"<<  it.second.at(i) << endl;
         }
