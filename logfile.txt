@@ -9,6 +9,7 @@ Emails deleted:7:2.25
 --------------------
 Training Sample Data
 --------------------
+<<<<<<< HEAD
 Emails deleted:1
 Emails opened:15
 Emails sent:11
@@ -308,6 +309,47 @@ Emails opened:8
 Emails sent:8
 Logins:6
 Time online:175.233
+=======
+Day 1
+ ---- 
+Emails deleted:12
+Emails opened:10
+Emails sent:10
+Logins:3
+Time online:170.218
+
+Day 2
+ ---- 
+Emails deleted:6
+Emails opened:2
+Emails sent:9
+Logins:4
+Time online:166.246
+
+Day 3
+ ---- 
+Emails deleted:7
+Emails opened:12
+Emails sent:14
+Logins:4
+Time online:218.983
+
+Day 4
+ ---- 
+Emails deleted:8
+Emails opened:12
+Emails sent:10
+Logins:3
+Time online:161.629
+
+Day 5
+ ---- 
+Emails deleted:8
+Emails opened:11
+Emails sent:10
+Logins:5
+Time online:134.264
+>>>>>>> 2b92a1ee0b7db65acd371a4d3c47da0ad871ff45
 
 ########################### NEW TEST ##############################
 --------------------
@@ -321,6 +363,7 @@ Emails deleted:27:2.25
 --------------------
 Live Sample Data
 --------------------
+<<<<<<< HEAD
 Emails deleted:25
 Emails opened:4
 Emails sent:1003
@@ -368,6 +411,108 @@ Emails opened:-7
 Emails sent:1000
 Logins:5
 Time online:324.522
+=======
+Day 1
+ ---- 
+Emails deleted:26
+Emails opened:1
+Emails sent:1000
+Logins:6
+Time online:308.138
+
+Day 2
+ ---- 
+Emails deleted:24
+Emails opened:-5
+Emails sent:1006
+Logins:5
+Time online:269.811
+
+Day 3
+ ---- 
+Emails deleted:30
+Emails opened:6
+Emails sent:995
+Logins:5
+Time online:333.584
+
+Day 4
+ ---- 
+Emails deleted:28
+Emails opened:1
+Emails sent:1001
+Logins:7
+Time online:318.674
+
+Day 5
+ ---- 
+Emails deleted:28
+Emails opened:-3
+Emails sent:1005
+Logins:8
+Time online:240.968
+
+--------------------
+Alert Log
+--------------------
+[ALERT] Day 1: 308.138 Off by 348.528
+[ALERT] Day 2: 269.811 Off by 348.772
+[ALERT] Day 3: 333.584 Off by 347.879
+[ALERT] Day 4: 318.674 Off by 350.838
+[ALERT] Day 5: 240.968 Off by 350.619
+
+########################### NEW TEST ##############################
+--------------------
+Live Stat
+--------------------
+Logins:4:1.5
+Time online:150.5:25
+Emails sent:10:3
+Emails opened:12:4.5
+Emails deleted:7:2.25
+--------------------
+Live Sample Data
+--------------------
+Day 1
+ ---- 
+Emails deleted:8
+Emails opened:6
+Emails sent:8
+Logins:4
+Time online:183.483
+
+Day 2
+ ---- 
+Emails deleted:6
+Emails opened:10
+Emails sent:11
+Logins:6
+Time online:160.191
+
+Day 3
+ ---- 
+Emails deleted:7
+Emails opened:9
+Emails sent:16
+Logins:2
+Time online:183.838
+
+Day 4
+ ---- 
+Emails deleted:9
+Emails opened:24
+Emails sent:10
+Logins:5
+Time online:127.599
+
+Day 5
+ ---- 
+Emails deleted:4
+Emails opened:11
+Emails sent:13
+Logins:3
+Time online:97.4315
+>>>>>>> 2b92a1ee0b7db65acd371a4d3c47da0ad871ff45
 
 --------------------
 Alert Log
