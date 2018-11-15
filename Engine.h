@@ -66,6 +66,8 @@ public:
     // double getSSD(string);
     double checkAnomaly(string, double);
     void Alertium(int);
+
+    double to_tdp(double);
 };
 
 #endif

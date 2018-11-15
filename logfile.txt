@@ -11,403 +11,403 @@ Training Sample Data
 --------------------
 Day 1
  ---- 
-Emails deleted:8
-Emails opened:11
-Emails sent:6
-Logins:5
-Time online:181.059
+Emails deleted:6
+Emails opened:10
+Emails sent:7
+Logins:1
+Time online:176.72
 
 Day 2
  ---- 
-Emails deleted:5
-Emails opened:13
-Emails sent:10
+Emails deleted:6
+Emails opened:11
+Emails sent:17
 Logins:4
-Time online:162.819
+Time online:185.19
 
 Day 3
  ---- 
-Emails deleted:6
-Emails opened:13
-Emails sent:9
+Emails deleted:14
+Emails opened:11
+Emails sent:11
 Logins:2
-Time online:159.391
+Time online:130.62
 
 Day 4
  ---- 
-Emails deleted:7
-Emails opened:12
-Emails sent:7
-Logins:4
-Time online:141.088
+Emails deleted:2
+Emails opened:10
+Emails sent:10
+Logins:3
+Time online:111.61
 
 Day 5
  ---- 
-Emails deleted:7
-Emails opened:15
-Emails sent:9
-Logins:5
-Time online:200.707
+Emails deleted:8
+Emails opened:16
+Emails sent:1
+Logins:4
+Time online:186.72
 
 Day 6
  ---- 
-Emails deleted:8
-Emails opened:12
-Emails sent:13
-Logins:6
-Time online:141.195
+Emails deleted:9
+Emails opened:9
+Emails sent:9
+Logins:1
+Time online:110.29
 
 Day 7
  ---- 
-Emails deleted:6
-Emails opened:19
-Emails sent:11
+Emails deleted:5
+Emails opened:10
+Emails sent:12
 Logins:4
-Time online:156.883
+Time online:165.93
 
 Day 8
  ---- 
-Emails deleted:6
-Emails opened:14
-Emails sent:12
-Logins:5
-Time online:183.574
+Emails deleted:9
+Emails opened:7
+Emails sent:9
+Logins:3
+Time online:148.17
 
 Day 9
  ---- 
-Emails deleted:10
-Emails opened:11
-Emails sent:15
-Logins:3
-Time online:198.097
+Emails deleted:3
+Emails opened:15
+Emails sent:12
+Logins:5
+Time online:169.39
 
 Day 10
  ---- 
-Emails deleted:5
-Emails opened:14
-Emails sent:8
+Emails deleted:9
+Emails opened:15
+Emails sent:13
 Logins:4
-Time online:188.093
+Time online:144.11
 
 Day 11
  ---- 
-Emails deleted:9
-Emails opened:12
-Emails sent:6
-Logins:3
-Time online:134.904
+Emails deleted:6
+Emails opened:16
+Emails sent:9
+Logins:1
+Time online:168.54
 
 Day 12
  ---- 
-Emails deleted:6
-Emails opened:17
-Emails sent:11
-Logins:3
-Time online:154.734
+Emails deleted:7
+Emails opened:19
+Emails sent:6
+Logins:5
+Time online:166.05
 
 Day 13
  ---- 
-Emails deleted:5
-Emails opened:7
-Emails sent:6
+Emails deleted:7
+Emails opened:16
+Emails sent:10
 Logins:4
-Time online:150.624
+Time online:122.22
 
 Day 14
  ---- 
 Emails deleted:4
-Emails opened:12
-Emails sent:11
-Logins:3
-Time online:151.342
+Emails opened:8
+Emails sent:7
+Logins:9
+Time online:171.63
 
 Day 15
  ---- 
-Emails deleted:7
-Emails opened:9
-Emails sent:13
-Logins:5
-Time online:140.82
+Emails deleted:5
+Emails opened:12
+Emails sent:11
+Logins:6
+Time online:152.65
 
 Day 16
  ---- 
 Emails deleted:7
-Emails opened:8
-Emails sent:7
-Logins:2
-Time online:146.148
+Emails opened:10
+Emails sent:11
+Logins:4
+Time online:170.77
 
 Day 17
  ---- 
-Emails deleted:5
-Emails opened:20
-Emails sent:15
-Logins:5
-Time online:153.853
+Emails deleted:8
+Emails opened:22
+Emails sent:13
+Logins:4
+Time online:174.65
 
 Day 18
  ---- 
-Emails deleted:8
+Emails deleted:5
 Emails opened:15
-Emails sent:5
+Emails sent:7
 Logins:3
-Time online:168.559
+Time online:100.71
 
 Day 19
  ---- 
-Emails deleted:4
-Emails opened:18
-Emails sent:2
-Logins:3
-Time online:144.65
+Emails deleted:8
+Emails opened:12
+Emails sent:11
+Logins:4
+Time online:98.57
 
 Day 20
  ---- 
-Emails deleted:11
-Emails opened:17
+Emails deleted:5
+Emails opened:10
 Emails sent:10
-Logins:5
-Time online:185.786
+Logins:4
+Time online:168.19
 
 Day 21
  ---- 
-Emails deleted:6
-Emails opened:18
-Emails sent:9
-Logins:4
-Time online:161.485
+Emails deleted:1
+Emails opened:9
+Emails sent:14
+Logins:6
+Time online:177.77
 
 Day 22
  ---- 
-Emails deleted:3
-Emails opened:15
-Emails sent:13
-Logins:4
-Time online:128.057
+Emails deleted:7
+Emails opened:4
+Emails sent:8
+Logins:3
+Time online:185.27
 
 Day 23
  ---- 
-Emails deleted:5
-Emails opened:5
-Emails sent:8
-Logins:7
-Time online:116.187
+Emails deleted:6
+Emails opened:10
+Emails sent:7
+Logins:6
+Time online:147.32
 
 Day 24
  ---- 
-Emails deleted:9
-Emails opened:7
-Emails sent:9
-Logins:2
-Time online:160.031
+Emails deleted:5
+Emails opened:12
+Emails sent:8
+Logins:3
+Time online:110.52
 
 Day 25
  ---- 
-Emails deleted:9
-Emails opened:13
-Emails sent:7
+Emails deleted:3
+Emails opened:16
+Emails sent:8
 Logins:3
-Time online:173.889
+Time online:108.18
 
 Day 26
  ---- 
 Emails deleted:6
-Emails opened:1
-Emails sent:9
-Logins:3
-Time online:132.805
+Emails opened:8
+Emails sent:12
+Logins:2
+Time online:149.6
 
 Day 27
  ---- 
-Emails deleted:8
-Emails opened:11
+Emails deleted:13
+Emails opened:9
 Emails sent:9
-Logins:5
-Time online:149.35
+Logins:3
+Time online:168.97
 
 Day 28
  ---- 
-Emails deleted:6
-Emails opened:9
-Emails sent:13
-Logins:4
-Time online:180.526
+Emails deleted:7
+Emails opened:8
+Emails sent:9
+Logins:3
+Time online:143.01
 
 Day 29
  ---- 
-Emails deleted:8
-Emails opened:7
+Emails deleted:6
+Emails opened:16
 Emails sent:10
-Logins:4
-Time online:159.157
+Logins:5
+Time online:123.12
 
 Day 30
  ---- 
-Emails deleted:4
-Emails opened:14
-Emails sent:10
+Emails deleted:5
+Emails opened:8
+Emails sent:8
 Logins:4
-Time online:116.16
+Time online:179.7
 
 Day 31
  ---- 
-Emails deleted:10
-Emails opened:12
-Emails sent:12
-Logins:7
-Time online:145.661
+Emails deleted:9
+Emails opened:7
+Emails sent:10
+Logins:4
+Time online:124.87
 
 Day 32
  ---- 
-Emails deleted:6
-Emails opened:13
-Emails sent:16
-Logins:5
-Time online:138.77
+Emails deleted:10
+Emails opened:19
+Emails sent:9
+Logins:3
+Time online:176.41
 
 Day 33
  ---- 
-Emails deleted:11
-Emails opened:16
-Emails sent:6
-Logins:5
-Time online:125.906
+Emails deleted:6
+Emails opened:15
+Emails sent:10
+Logins:4
+Time online:124.63
 
 Day 34
  ---- 
-Emails deleted:4
-Emails opened:16
-Emails sent:4
+Emails deleted:8
+Emails opened:4
+Emails sent:11
 Logins:4
-Time online:117.431
+Time online:141.84
 
 Day 35
  ---- 
-Emails deleted:4
-Emails opened:13
-Emails sent:9
-Logins:5
-Time online:163.558
+Emails deleted:7
+Emails opened:24
+Emails sent:11
+Logins:4
+Time online:139.73
 
 Day 36
  ---- 
-Emails deleted:7
-Emails opened:17
-Emails sent:11
-Logins:2
-Time online:148.924
+Emails deleted:9
+Emails opened:16
+Emails sent:8
+Logins:1
+Time online:124.24
 
 Day 37
  ---- 
-Emails deleted:6
-Emails opened:15
-Emails sent:13
-Logins:5
-Time online:158.749
+Emails deleted:10
+Emails opened:2
+Emails sent:10
+Logins:3
+Time online:109.61
 
 Day 38
  ---- 
-Emails deleted:10
-Emails opened:10
-Emails sent:11
-Logins:2
-Time online:158.699
+Emails deleted:11
+Emails opened:14
+Emails sent:13
+Logins:3
+Time online:123.69
 
 Day 39
  ---- 
-Emails deleted:9
-Emails opened:6
-Emails sent:14
-Logins:2
-Time online:151.99
+Emails deleted:8
+Emails opened:11
+Emails sent:15
+Logins:5
+Time online:161.23
 
 Day 40
  ---- 
 Emails deleted:4
-Emails opened:17
-Emails sent:8
-Logins:5
-Time online:130.161
+Emails opened:12
+Emails sent:11
+Logins:8
+Time online:161.04
 
 Day 41
  ---- 
-Emails deleted:7
-Emails opened:13
-Emails sent:15
+Emails deleted:8
+Emails opened:18
+Emails sent:12
 Logins:4
-Time online:109.593
+Time online:161.64
 
 Day 42
  ---- 
-Emails deleted:11
-Emails opened:15
+Emails deleted:10
+Emails opened:8
 Emails sent:12
-Logins:2
-Time online:209.699
+Logins:5
+Time online:153.04
 
 Day 43
  ---- 
-Emails deleted:9
-Emails opened:20
-Emails sent:9
-Logins:3
-Time online:147.762
+Emails deleted:4
+Emails opened:11
+Emails sent:14
+Logins:4
+Time online:150.52
 
 Day 44
  ---- 
-Emails deleted:5
-Emails opened:18
-Emails sent:15
-Logins:5
-Time online:98.925
+Emails deleted:6
+Emails opened:16
+Emails sent:8
+Logins:6
+Time online:151.76
 
 Day 45
  ---- 
-Emails deleted:8
-Emails opened:12
-Emails sent:6
-Logins:0
-Time online:162.572
+Emails deleted:3
+Emails opened:16
+Emails sent:9
+Logins:4
+Time online:136.66
 
 Day 46
  ---- 
-Emails deleted:5
-Emails opened:11
-Emails sent:9
-Logins:5
-Time online:117.858
+Emails deleted:8
+Emails opened:16
+Emails sent:11
+Logins:2
+Time online:157.39
 
 Day 47
  ---- 
-Emails deleted:9
-Emails opened:20
-Emails sent:14
-Logins:2
-Time online:168.204
+Emails deleted:8
+Emails opened:23
+Emails sent:8
+Logins:3
+Time online:106.04
 
 Day 48
  ---- 
-Emails deleted:9
-Emails opened:9
-Emails sent:9
+Emails deleted:10
+Emails opened:13
+Emails sent:7
 Logins:4
-Time online:168.63
+Time online:137.72
 
 Day 49
  ---- 
-Emails deleted:6
-Emails opened:15
-Emails sent:10
-Logins:8
-Time online:145.683
+Emails deleted:9
+Emails opened:11
+Emails sent:7
+Logins:2
+Time online:140.89
 
 Day 50
  ---- 
-Emails deleted:10
-Emails opened:15
-Emails sent:10
-Logins:5
-Time online:106.229
+Emails deleted:5
+Emails opened:14
+Emails sent:12
+Logins:4
+Time online:191.59
 
 ########################### NEW TEST ##############################
 --------------------
@@ -423,50 +423,50 @@ Live Sample Data
 --------------------
 Day 1
  ---- 
-Emails deleted:28
+Emails deleted:31
 Emails opened:5
-Emails sent:998
+Emails sent:1000
 Logins:8
-Time online:320.1
+Time online:303.5
 
 Day 2
  ---- 
-Emails deleted:29
-Emails opened:7
+Emails deleted:24
+Emails opened:5
 Emails sent:1000
 Logins:8
-Time online:263.658
+Time online:322.72
 
 Day 3
  ---- 
-Emails deleted:26
-Emails opened:3
-Emails sent:997
-Logins:3
-Time online:325.498
+Emails deleted:25
+Emails opened:5
+Emails sent:1003
+Logins:6
+Time online:324.89
 
 Day 4
  ---- 
-Emails deleted:28
-Emails opened:8
-Emails sent:1005
-Logins:6
-Time online:300.609
+Emails deleted:24
+Emails opened:3
+Emails sent:1003
+Logins:5
+Time online:283.21
 
 Day 5
  ---- 
-Emails deleted:28
+Emails deleted:26
 Emails opened:5
-Emails sent:1004
-Logins:5
-Time online:292.134
+Emails sent:1002
+Logins:2
+Time online:282.47
 
 --------------------
 Alert Log
 --------------------
-[ALERT] Day 1: 320.1 Off by 349.673
-[ALERT] Day 2: 263.658 Off by 348.082
-[ALERT] Day 3: 325.498 Off by 347.111
-[ALERT] Day 4: 300.609 Off by 349.227
-[ALERT] Day 5: 292.134 Off by 348.554
+[ALERT] Day 1: 303.5 Off by 351.009
+[ALERT] Day 2: 322.72 Off by 348.667
+[ALERT] Day 3: 324.89 Off by 348.864
+[ALERT] Day 4: 283.21 Off by 346.531
+[ALERT] Day 5: 282.47 Off by 347.279
 

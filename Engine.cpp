@@ -33,8 +33,11 @@ void Engine::gen_sample(int days){
 			std::normal_distribution<float> d(it.second.Mean, it.second.stdDev);
 			double n = (d(gen));
             // if descreet round it off
-            if(this->gEvents.find(it.second.Name)->second.Continuous == false)
-                n = round(n);
+            if(this->gEvents.find(it.second.Name)->second.Continuous == false){
+               n = round(n);
+            } else {
+               n = to_tdp(n);
+            }
             // check for bounds
             if (this->gEvents.find(it.second.Name)->second.Min <= n && (this->gEvents.find(it.second.Name)->second.Max == -1 || n <= this->gEvents.find(it.second.Name)->second.Max)){
                 tmp.push_back(n);
@@ -71,8 +74,12 @@ void Engine::gen_sample_live(int days){
 			std::normal_distribution<float> d(it.second.Mean, it.second.stdDev);
 			double n = (d(gen));
             // if descreet round it off
-            if(this->gEvents.find(it.second.Name)->second.Continuous == false)
-                n = round(n);
+            if(this->gEvents.find(it.second.Name)->second.Continuous == false){
+               n = round(n);
+            } else {
+               n = to_tdp(n);
+            }
+
 
             // check for bounds
             if (this->gEvents.find(it.second.Name)->second.Min <= n && (this->gEvents.find(it.second.Name)->second.Max == -1 || n <= this->gEvents.find(it.second.Name)->second.Max)){
@@ -197,18 +204,6 @@ double Engine::getEWeight(string eventName){
    return tmpEvent.Wgt;
 }
 
-// double Engine::getSMean(string eventName){
-//    auto it = this->gStats.find(eventName);
-//    Stat tmpStat = it->second;
-//    return tmpStat.Mean;
-// }
-//
-// double Engine::getSSD(string eventName){
-//    auto it = this->gStats.find(eventName);
-//    Stat tmpStat = it->second;
-//    return tmpStat.stdDev;
-// }
-
 double Engine::checkAnomaly(string eventName, double sampleData){
    auto it = this->gStats.find(eventName);
    Stat tmpStat = it->second;
@@ -287,4 +282,8 @@ void Engine::Alertium(int liveDays){
    //
    // }
    cout << "=====================\nAlertium complete\n=====================" << endl;
+}
+
+double Engine::to_tdp(double n){
+   return floor((n*100)+0.5)/100;
 }
