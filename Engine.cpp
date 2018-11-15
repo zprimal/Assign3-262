@@ -235,6 +235,12 @@ void Engine::Alertium(int liveDays){
    }
    threshold = threshold*2;
 
+    this->myfile.open("logfile.txt", std::ios_base::app);
+    this->myfile << "--------------------" << endl;
+    this->myfile << "Alert Log" << endl;
+    this->myfile << "--------------------" << endl;
+
+
    // Run event data for each day
    for (int a = 0; a < liveDays; a++) {
       double dailyOff = 0;
@@ -250,8 +256,12 @@ void Engine::Alertium(int liveDays){
       // Compare against total event anomaly
       if (dailyOff >= threshold) {
          cout << "[ALERT] Day " << a+1 << ": " << tmpVector[a] << " Off by " << dailyOff << endl;
+         this->myfile << "[ALERT] Day " << a+1 << ": " << tmpVector[a] << " Off by " << dailyOff << endl;
+
       }
    }
+    this->myfile<< std::endl;
+   this->myfile.close();
 
    //ORIGINAL CODE
    // for (auto i = eventdata.begin(); i != eventdata.end(); i++) {

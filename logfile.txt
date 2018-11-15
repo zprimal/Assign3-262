@@ -9,35 +9,35 @@ Emails deleted:7:2.25
 --------------------
 Training Sample Data
 --------------------
-Emails deleted:11
-Emails opened:8
-Emails sent:11
-Logins:1
-Time online:154.619
+Emails deleted:3
+Emails opened:11
+Emails sent:7
+Logins:3
+Time online:168.397
 
-Emails deleted:8
-Emails opened:10
-Emails sent:10
-Logins:4
-Time online:170.292
+Emails deleted:7
+Emails opened:14
+Emails sent:12
+Logins:3
+Time online:166.186
 
 Emails deleted:10
-Emails opened:16
-Emails sent:12
-Logins:4
-Time online:169.209
+Emails opened:19
+Emails sent:13
+Logins:5
+Time online:181.497
 
-Emails deleted:3
-Emails opened:9
-Emails sent:12
-Logins:4
-Time online:187.418
-
-Emails deleted:3
+Emails deleted:6
 Emails opened:12
-Emails sent:9
-Logins:1
-Time online:133.914
+Emails sent:11
+Logins:3
+Time online:105.596
+
+Emails deleted:10
+Emails opened:9
+Emails sent:14
+Logins:3
+Time online:149.142
 
 ########################### NEW TEST ##############################
 --------------------
@@ -51,33 +51,88 @@ Emails deleted:27:2.25
 --------------------
 Live Sample Data
 --------------------
-Emails deleted:32
-Emails opened:-2
-Emails sent:999
-Logins:8
-Time online:294.09
-
 Emails deleted:28
+Emails opened:5
+Emails sent:994
+Logins:6
+Time online:290.583
+
+Emails deleted:29
 Emails opened:1
-Emails sent:1005
-Logins:9
-Time online:306.258
+Emails sent:1004
+Logins:5
+Time online:319.664
 
-Emails deleted:30
-Emails opened:9
-Emails sent:1001
-Logins:8
-Time online:321.57
+Emails deleted:24
+Emails opened:2
+Emails sent:998
+Logins:7
+Time online:311.116
 
-Emails deleted:28
-Emails opened:10
-Emails sent:1001
-Logins:8
-Time online:273.23
+Emails deleted:24
+Emails opened:-0
+Emails sent:1004
+Logins:6
+Time online:320.453
 
 Emails deleted:27
-Emails opened:9
-Emails sent:1001
+Emails opened:-1
+Emails sent:1004
+Logins:8
+Time online:299.368
+
+--------------------
+Alert Log
+--------------------
+[ALERT] Day 1: 290.583 Off by 345.826
+[ALERT] Day 2: 319.664 Off by 350.989
+[ALERT] Day 3: 311.116 Off by 347.536
+[ALERT] Day 4: 320.453 Off by 349.687
+[ALERT] Day 5: 299.368 Off by 351.732
+
+########################### NEW TEST ##############################
+--------------------
+Live Stat
+--------------------
+Logins:4:1.5
+Time online:150.5:25
+Emails sent:10:3
+Emails opened:12:4.5
+Emails deleted:7:2.25
+--------------------
+Live Sample Data
+--------------------
+Emails deleted:5
+Emails opened:11
+Emails sent:9
+Logins:2
+Time online:169.888
+
+Emails deleted:8
+Emails opened:3
+Emails sent:10
+Logins:4
+Time online:155.791
+
+Emails deleted:11
+Emails opened:2
+Emails sent:14
+Logins:2
+Time online:199.101
+
+Emails deleted:8
+Emails opened:12
+Emails sent:10
 Logins:6
-Time online:290.966
+Time online:163.26
+
+Emails deleted:8
+Emails opened:10
+Emails sent:16
+Logins:4
+Time online:157.412
+
+--------------------
+Alert Log
+--------------------
 
