@@ -2,6 +2,7 @@
 
 #include "IDS.h"
 using namespace std;
+std::ofstream myfile;
 
 int main(int argc, char const *argv[]) {
    if (argc != 4) {
@@ -144,7 +145,6 @@ int readStats(string fileName){
       file.open(fileName);
       int size = 0;
 
-      std::ofstream myfile;
       myfile.open("logfile.txt");
       myfile << "--------------------" <<endl;
       myfile << "Training Stat" <<endl;
@@ -197,6 +197,13 @@ int readLive(string fileName){
 	file.open(fileName);
    int size = 0;
 
+      myfile.open("logfile.txt", std::ios_base::app);
+      myfile << "########################### NEW TEST ##############################" <<endl;
+      myfile << "--------------------" <<endl;
+      myfile << "Live Stat" <<endl;
+      myfile << "--------------------" <<endl;
+
+
    if(file.fail()){
 		cout << "Error reading file!" << endl;
 	} else {
@@ -217,12 +224,15 @@ int readLive(string fileName){
          //Variables into glob variables
          sMean = stod(stMean);
          sSD = stod(stSD);
-         cout << sName << " " << sMean << " " << sSD << endl;
+      //    cout << sName << " " << sMean << " " << sSD << endl;
+            myfile <<  sName << ":" << sMean << ":" << sSD << endl;
+
          //Stat newStat(sName, sMean, sSD);
          gEngine.push_stat_live(Stat(sName, sMean, sSD));
       }
    }
    cout << "Closing file" << endl;
    file.close();
+   myfile.close();
    return size;
 }

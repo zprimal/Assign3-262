@@ -13,10 +13,6 @@ void Engine::push_event(Event newEvent){
 
 void Engine::push_stat(Stat newStat){
    this->gStats.insert(std::make_pair<>(newStat.Name, newStat));
-    // // write to log
-    // this->myfile.open("logfile.txt");
-    // this->myfile << newStat.Name << ":" << newStat.Mean <<":" << newStat.stdDev << endl;
-    // this->myfile.close();
 }
 
 void Engine::push_stat_live(Stat newStat){
@@ -51,12 +47,16 @@ void Engine::gen_sample(int days){
     }
 
     this->myfile.open("logfile.txt", std::ios_base::app);
-	for(auto const& it: this->eventdata) {
-		this->myfile << it.first << ":";
-        	for(auto const& it2: it.second){
-                this->myfile << ":" << it2 << endl;
-            }
-	}
+    this->myfile << "--------------------" << endl;
+    this->myfile << "Training Sample Data" << endl;
+    this->myfile << "--------------------" << endl;
+    for (int i = 0; i < days ; i++){
+        for(auto const& it: this->eventdata) {
+           this->myfile << it.first<< ":"<<  it.second.at(i) << endl;
+        }
+        this->myfile << endl;
+    }
+    this->myfile.close();
 
 }
 
@@ -84,12 +84,16 @@ void Engine::gen_sample_live(int days){
     }
 
     this->myfile.open("logfile.txt", std::ios_base::app);
-	for(auto const& it: this->eventdata) {
-		this->myfile << it.first << ":";
-        	for(auto const& it2: it.second){
-                this->myfile << ":" << it2 << endl;
-            }
-	}
+    this->myfile << "--------------------" << endl;
+    this->myfile << "Live Sample Data" << endl;
+    this->myfile << "--------------------" << endl;
+    for (int i = 0; i < days ; i++){
+        for(auto const& it: this->eventdata) {
+           this->myfile << it.first<< ":"<<  it.second.at(i) << endl;
+        }
+        this->myfile << endl;
+    }
+    this->myfile.close();
 
 }
 

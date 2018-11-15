@@ -6,28 +6,78 @@ Time online:150.5:25
 Emails sent:10:3
 Emails opened:12:4.5
 Emails deleted:7:2.25
-Emails deleted::4
-:7
-:9
-:9
-:8
-Emails opened::20
-:10
-:18
-:10
-:10
-Emails sent::15
-:7
-:12
-:10
-:7
-Logins::5
-:6
-:3
-:4
-:5
-Time online::175.466
-:122.286
-:125.273
-:154.601
-:165.772
+--------------------
+Training Sample Data
+--------------------
+Emails deleted:11
+Emails opened:8
+Emails sent:11
+Logins:1
+Time online:154.619
+
+Emails deleted:8
+Emails opened:10
+Emails sent:10
+Logins:4
+Time online:170.292
+
+Emails deleted:10
+Emails opened:16
+Emails sent:12
+Logins:4
+Time online:169.209
+
+Emails deleted:3
+Emails opened:9
+Emails sent:12
+Logins:4
+Time online:187.418
+
+Emails deleted:3
+Emails opened:12
+Emails sent:9
+Logins:1
+Time online:133.914
+
+########################### NEW TEST ##############################
+--------------------
+Live Stat
+--------------------
+Logins:6:1.5
+Time online:300.5:25
+Emails sent:1000:3
+Emails opened:1:4.5
+Emails deleted:27:2.25
+--------------------
+Live Sample Data
+--------------------
+Emails deleted:32
+Emails opened:-2
+Emails sent:999
+Logins:8
+Time online:294.09
+
+Emails deleted:28
+Emails opened:1
+Emails sent:1005
+Logins:9
+Time online:306.258
+
+Emails deleted:30
+Emails opened:9
+Emails sent:1001
+Logins:8
+Time online:321.57
+
+Emails deleted:28
+Emails opened:10
+Emails sent:1001
+Logins:8
+Time online:273.23
+
+Emails deleted:27
+Emails opened:9
+Emails sent:1001
+Logins:6
+Time online:290.966
+
