@@ -64,7 +64,12 @@ public:
     // double getSMean(string);
     // double getSSD(string);
     double checkAnomaly(string, double);
+<<<<<<< HEAD
+    void Alertium();
+
+=======
     void Alertium(int);
+>>>>>>> b1d343166def2ea3286614e26b7da532d5f990f1
 };
 
 #endif
