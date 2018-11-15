@@ -1,6 +1,6 @@
 5
 Logins:6:1.5:
 Time online:300.5:25.00:
-Emails sent:1010:3:
-Emails opened:119:4.5:
+Emails sent:1000:3:
+Emails opened:1:4.5:
 Emails deleted:27:2.25:

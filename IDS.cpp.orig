@@ -67,8 +67,12 @@ int main(int argc, char const *argv[]) {
             gEngine.Alertium(liveDays);
 
             /* Clear Live Instances */
+<<<<<<< HEAD
+
+=======
             gEngine.clear_live_stat();
             gEngine.clear_sample_data();
+>>>>>>> a36cd8c96510e98c6aa935806f7e32fd94643e02
             break;
          case 2: quit = true;
             break;

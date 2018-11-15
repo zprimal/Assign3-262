@@ -93,22 +93,42 @@ void Engine::gen_sample_live(int days){
 
 }
 
-int Engine::checkEventStats(){
+void Engine::checkEventStats(){
+   cout << "checkEventStats" << endl;
    // Names different
+   bool matched = false;
    for (auto i = gEvents.begin(); i != gEvents.end(); i++) {
       for (auto j = gStats.begin(); j != gStats.end(); j++) {
-         /* code */
+         if (i->first == j->first) {
+            matched = true;
+         }
       }
+      if (!matched) {
+         cout << i->first << " has no match!\nExiting program" << endl;
+         exit(0);
+      }
+      matched = false;
    }
-
-   // Number of events must be the same
-
-
-   // Mean exceeds min-max
-
    //Check if live stats matches event names
+}
 
-
+void Engine::checkEventLive(){
+   cout << "checkEventLive" << endl;
+   // Names different
+   bool matched = false;
+   for (auto i = gEvents.begin(); i != gEvents.end(); i++) {
+      for (auto j = liveStat.begin(); j != liveStat.end(); j++) {
+         if (i->first == j->first) {
+            matched = true;
+         }
+      }
+      if (!matched) {
+         cout << i->first << " has no match!\nExiting program" << endl;
+         exit(0);
+      }
+      matched = false;
+   }
+   //Check if live stats matches event names
 }
 
 void Engine::clear_sample_data(){
